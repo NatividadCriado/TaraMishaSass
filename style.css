@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+/* font-family: 'Courgette', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+/* font-family: 'Courgette', cursive; */
+body {
+  background-color: #f8cfd8;
+  font-family: 'Courgette', cursive;
+}
+
+body img {
+  background-image: url(Imagenes/encabezado.jpg);
+  height: 15vw;
+  width: 100vw;
+}
+
+ul li a {
+  color: #8a2c8a;
+}
+
+ul li .nav-link {
+  text-align: center;
+  margin-top: none;
+}
+
+.barra {
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  width: 100vw;
+  background-color: #f85dc9;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.15rem;
+  list-style-type: none;
+}
+
+.card-title {
+  text-align: center;
+  color: #8a2c8a;
+  background-color: #f8cfd8;
+}
+
+h1 {
+  text-align: center;
+}
+
+.animacion {
+  -webkit-animation: anima;
+          animation: anima;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes anima {
+  0% {
+    font-size: 25px;
+  }
+  25% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 15px;
+  }
+  75% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 25px;
+  }
+}
+
+@keyframes anima {
+  0% {
+    font-size: 25px;
+  }
+  25% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 15px;
+  }
+  75% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 25px;
+  }
+}
+
+.card-img-top {
+  height: 15rem;
+  width: 15rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.card {
+  height: 15rem;
+  width: 15rem;
+  margin-bottom: 5rem;
+  margin-left: 3.5rem;
+}
+
+form fieldset legend {
+  font-size: 25px;
+  color: #702f6b;
+  margin-left: 0.5rem;
+}
+
+form fieldset label {
+  font-size: 16px;
+  color: #702f6b;
+  margin-left: 0.5rem;
+}
+
+form fieldset textarea {
+  width: 400px;
+  height: 150px;
+  margin-left: 0.5rem;
+}
+
+dl {
+  margin-left: 0.5rem;
+}
+
+p {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  width: 100vw;
+  background-color: orange;
+  justify-items: center;
+}
+/*# sourceMappingURL=style.css.map */
