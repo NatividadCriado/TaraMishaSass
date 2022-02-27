@@ -109,6 +109,10 @@ h1 {
   margin-left: 3.5rem;
 }
 
+.card-text {
+  overflow: scroll;
+}
+
 form fieldset legend {
   font-size: 25px;
   color: #702f6b;
