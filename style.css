@@ -2,6 +2,22 @@
 /* font-family: 'Courgette', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 /* font-family: 'Courgette', cursive; */
+.Faceboock {
+  color: #3434ca;
+}
+
+.Twitter {
+  color: #8a2c8a;
+}
+
+.Instagram {
+  color: black;
+}
+
+.Youtube {
+  color: red;
+}
+
 body {
   background-color: #f8cfd8;
   font-family: 'Courgette', cursive;
@@ -95,16 +111,12 @@ h1 {
   }
 }
 
-.card-img-top {
-  height: 15rem;
+.card-img-top, .card {
   width: 15rem;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  height: 15rem;
 }
 
 .card {
-  height: 15rem;
-  width: 15rem;
   margin-bottom: 5rem;
   margin-left: 3.5rem;
 }

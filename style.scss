@@ -17,7 +17,7 @@ ul{
     
     li{
         a{
-            color: $colorMorado;
+            color: map-get($redes, Twitter);
         }
         .nav-link{
             text-align: center;
@@ -70,13 +70,10 @@ h1{
     }
 }
 .card-img-top{
-    height: 15rem;
-    width: 15rem;
-    justify-self: center;
+    @include sizes(15rem,15rem)
 }
 .card{
-    height: 15rem;
-    width: 15rem;
+    @extend.card-img-top;
     margin-bottom: 5rem;
     margin-left: 3.5rem;
 }
