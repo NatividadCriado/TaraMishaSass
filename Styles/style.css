@@ -23,13 +23,25 @@ body {
   font-family: 'Courgette', cursive;
 }
 
-body img {
+body .debajo {
   background-image: url(Imagenes/encabezado.jpg);
   height: 15vw;
-  width: 100vw;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body .encima {
+  position: absolute;
+  z-index: +1;
+  width: 9vw;
+  height: 9vw;
+  margin-top: 3rem;
+  margin-left: 37.5rem;
 }
 
 ul li a {
+  margin-top: 13rem;
   color: #8a2c8a;
 }
 
@@ -42,7 +54,7 @@ ul li .nav-link {
   display: -ms-grid;
   display: grid;
   height: auto;
-  width: 100vw;
+  width: 100%;
   background-color: #f85dc9;
   justify-items: center;
   -webkit-box-align: center;
@@ -156,7 +168,7 @@ footer {
   display: -ms-grid;
   display: grid;
   height: auto;
-  width: 100vw;
+  width: 100%;
   background-color: orange;
   justify-items: center;
 }
