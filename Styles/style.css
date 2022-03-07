@@ -60,7 +60,6 @@ ul li .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 0.15rem;
   list-style-type: none;
 }
 
@@ -68,10 +67,12 @@ ul li .nav-link {
   text-align: center;
   color: #8a2c8a;
   background-color: #f8cfd8;
+  margin-bottom: 0.5vw;
 }
 
 h1 {
   text-align: center;
+  margin-top: 1.5vw;
 }
 
 .animacion {
@@ -123,18 +124,29 @@ h1 {
   }
 }
 
-.card-img-top, .card {
+.card-img-top {
   width: 15rem;
   height: 15rem;
 }
 
 .card {
-  margin-bottom: 5rem;
-  margin-left: 3.5rem;
+  width: 15rem;
+  height: 15rem;
+  margin-top: 3.5vw;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.card-text {
-  overflow: scroll;
+.card-title {
+  margin-top: 0.5vw;
+}
+
+#testimonio {
+  width: 15rem;
+  height: 15rem;
+  margin-left: auto;
+  margin-bottom: 1vw;
 }
 
 form fieldset legend {

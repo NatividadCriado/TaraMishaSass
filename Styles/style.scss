@@ -43,16 +43,18 @@ ul{
   background-color: rgb(248, 93, 201);
   justify-items: center;
   align-items: center;
-  margin-top: 0.15rem;
   list-style-type: none;
 }
 .card-title {
   text-align: center;
   color: rgb(138, 44, 138);
   background-color: rgb(248, 207, 216);
+  margin-bottom: 0.5vw;
 }
 h1 {
   text-align: center;
+  margin-top: 1.5vw;
+
 }
 .animacion {
   animation: anima;
@@ -84,13 +86,21 @@ h1 {
   @include sizes(15rem, 15rem);
 }
 .card {
-  @extend.card-img-top;
-  margin-bottom: 5rem;
-  margin-left: 3.5rem;
+  @include sizes(15rem,15rem);
+  margin-top: 3.5vw;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-.card-text {
-  overflow: scroll;
+.card-title{
+  margin-top: 0.5vw;
 }
+#testimonio{
+  @include sizes(15rem,15rem);
+  margin-left: auto;
+  margin-bottom: 1vw;
+}
+
 form {
   fieldset {
     legend {
@@ -124,4 +134,5 @@ footer {
   width: 100%;
   background-color: orange;
   justify-items: center;
+
 }
