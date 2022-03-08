@@ -20,7 +20,7 @@
 
 body {
   background-color: #f8cfd8;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 body .debajo {
@@ -68,6 +68,7 @@ ul li .nav-link {
   color: #8a2c8a;
   background-color: #f8cfd8;
   margin-bottom: 0.5vw;
+  margin-top: 0.5vw;
 }
 
 h1 {
@@ -138,8 +139,8 @@ h1 {
   margin-right: auto;
 }
 
-.card-title {
-  margin-top: 0.5vw;
+#card1 {
+  margin-top: none;
 }
 
 #testimonio {
@@ -149,31 +150,120 @@ h1 {
   margin-bottom: 1vw;
 }
 
+h1 {
+  color: #8a2c8a;
+  text-align: center;
+  margin-bottom: 2.5vw;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.textos {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+form {
+  width: 70%;
+}
+
 form fieldset legend {
-  font-size: 25px;
+  font-size: 1.5rem;
   color: #702f6b;
-  margin-left: 0.5rem;
 }
 
 form fieldset label {
-  font-size: 16px;
+  font-size: 1rem;
   color: #702f6b;
-  margin-left: 0.5rem;
+  margin-top: 0.5vw;
 }
 
 form fieldset textarea {
-  width: 400px;
-  height: 150px;
-  margin-left: 0.5rem;
+  width: 25rem;
+  height: 10rem;
+  margin-top: 0.5vw;
+}
+
+.map iframe {
+  margin-top: 0.8vw;
+  height: 15rem;
+  width: 25rem;
+}
+
+.img-fluid {
+  margin-top: 3rem;
+}
+
+.embed-responsive-item {
+  margin-left: 34.5vw;
+  height: 15vw;
+  width: 30vw;
+}
+
+@media (max-width: 1000px) {
+  .embed-responsive-item {
+    margin-left: 20vw;
+    height: 30vw;
+    width: 60vw;
+  }
+  #testimonio {
+    width: 15rem;
+    height: 19rem;
+  }
+}
+
+@media (max-width: 500px) {
+  form fieldset textarea {
+    width: 20rem;
+  }
+  .map iframe {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 400px) {
+  input#archivo {
+    color: transparent;
+  }
+  #testimonio {
+    width: 15rem;
+    height: 17rem;
+  }
+}
+
+@media (max-width: 300px) {
+  form fieldset textarea {
+    width: 15rem;
+  }
+  .map iframe {
+    width: 15rem;
+  }
 }
 
 dl {
-  margin-left: 0.5rem;
+  margin-left: 3vw;
+}
+
+dt {
+  margin-bottom: 1vw;
 }
 
 p {
-  margin-left: 0.5rem;
+  margin-left: 3vw;
   margin-right: 0.5rem;
+}
+
+.galeria {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 footer {

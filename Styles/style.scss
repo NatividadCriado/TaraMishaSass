@@ -3,38 +3,36 @@
 
 @import "variables";
 
-body{ 
-    background-color: rgb(248, 207, 216);
-    font-family: 'Courgette', cursive;
-    .debajo{
-        background-image: url(Imagenes/encabezado.jpg);
-        height: 15vw;
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-        }
-    .encima{
-        position: absolute;
-        z-index: +1;
-        width: 9vw;
-        height: 9vw;
-        margin-top: 3vw;
-        margin-left: 45vw;
-        
-    }
+body {
+  background-color: rgb(248, 207, 216);
+  font-family: "Courgette", cursive;
+  .debajo {
+    background-image: url(Imagenes/encabezado.jpg);
+    height: 15vw;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .encima {
+    position: absolute;
+    z-index: +1;
+    width: 9vw;
+    height: 9vw;
+    margin-top: 3vw;
+    margin-left: 45vw;
+  }
 }
-ul{
-    
-    li{
-        a{
-            margin-top: 15vw;
-            color: map-get($redes, Twitter);
-        }
-        .nav-link{
-            text-align: center;
-            margin-top: none;
-        }
+ul {
+  li {
+    a {
+      margin-top: 15vw;
+      color: map-get($redes, Twitter);
     }
+    .nav-link {
+      text-align: center;
+      margin-top: none;
+    }
+  }
 }
 .barra {
   display: grid;
@@ -50,11 +48,11 @@ ul{
   color: rgb(138, 44, 138);
   background-color: rgb(248, 207, 216);
   margin-bottom: 0.5vw;
+  margin-top: 0.5vw;
 }
 h1 {
   text-align: center;
   margin-top: 1.5vw;
-
 }
 .animacion {
   animation: anima;
@@ -86,47 +84,144 @@ h1 {
   @include sizes(15rem, 15rem);
 }
 .card {
-  @include sizes(15rem,15rem);
+  @include sizes(15rem, 15rem);
   margin-top: 3.5vw;
   margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
 }
-.card-title{
-  margin-top: 0.5vw;
+#card1 {
+  margin-top: none;
 }
-#testimonio{
-  @include sizes(15rem,15rem);
+
+#testimonio {
+  @include sizes(15rem, 15rem);
   margin-left: auto;
   margin-bottom: 1vw;
 }
+h1 {
+  color: rgb(138, 44, 138);
+  text-align: center;
+  margin-bottom: 2.5vw;
+}
+a:link {
+  text-decoration: none;
+}
+h2 {
+  text-align: center;
+  margin-top: 1.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.textos {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 
 form {
+  width: 70%;
   fieldset {
     legend {
-      font-size: 25px;
+      font-size: 1.5rem;
       color: rgb(112, 47, 107);
-      margin-left: 0.5rem;
     }
     label {
-      font-size: 16px;
+      font-size: 1rem;
       color: rgb(112, 47, 107);
-      margin-left: 0.5rem;
+      margin-top: 0.5vw;
     }
     textarea {
-      width: 400px;
-      height: 150px;
-      margin-left: 0.5rem;
+      width: 25rem;
+      height: 10rem;
+      margin-top: 0.5vw;
     }
   }
 }
+.map {
+  iframe {
+    margin-top: 0.8vw;
+    height: 15rem;
+    width: 25rem;
+  }
+}
+.img-fluid{
+  margin-top: 3rem;
+}
+
+.embed-responsive-item{
+  margin-left:34.5vw;
+  height: 15vw;
+  width: 30vw;
+}
+@media (max-width: 1000px){
+  .embed-responsive-item{
+    margin-left: 20vw;
+    height: 30vw;
+    width: 60vw;
+  }
+  #testimonio {
+    @include sizes(15rem, 19rem);
+  }
+}
+
+
+@media (max-width: 500px) {
+  form {
+    fieldset {
+      textarea {
+        width: 20rem;
+      }
+    }
+  }
+  .map {
+    iframe {
+      width: 20rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  input#archivo {
+    color: transparent;
+  }
+  #testimonio {
+    @include sizes(15rem, 17rem);
+  }
+}
+
+@media (max-width: 300px) {
+  form {
+    fieldset {
+      textarea {
+        width: 15rem;
+      }
+    }
+  }
+  .map {
+    iframe {
+      width: 15rem;
+    }
+  }
+}
+
 dl {
-  margin-left: 0.5rem;
+  margin-left: 3vw;
+}
+dt {
+  margin-bottom: 1vw;
 }
 p {
-  margin-left: 0.5rem;
+  margin-left: 3vw;
   margin-right: 0.5rem;
 }
+
+.galeria{
+margin-left: 2rem;
+margin-right: 2rem;
+}
+
+
+
 
 footer {
   display: grid;
@@ -134,5 +229,4 @@ footer {
   width: 100%;
   background-color: orange;
   justify-items: center;
-
 }

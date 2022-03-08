@@ -4,6 +4,7 @@
 $colorMorado: rgb(138, 44, 138);
 $redes: (Faceboock:rgb(52, 52, 202), Twitter:$colorMorado, Instagram:black, Youtube:red);
 
+
 @each $red, $color in $redes {
     .#{$red} {
     color:  $color;}
